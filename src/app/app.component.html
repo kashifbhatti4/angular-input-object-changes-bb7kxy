@@ -1,0 +1,11 @@
+<b>Parent User</b> {{user |json}}
+<b>Parent User$</b> {{user$ | async | json}}
+<br>
+<b>Parent Perons</b> {{person |json}}
+<!-- <hello [user]="user" [age]="age" [person]="person"></hello> -->
+<hello [age]="age" [person]="person"></hello>
+
+<button (click)="changeGender('user')">Change User Gender</button>
+<button (click)="changeGender('person')">Change Person Gender</button>
+<br><br><br>
+Age: <input type="number" [(ngModel)]="age">
